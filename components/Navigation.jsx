@@ -17,7 +17,7 @@ export default function Navigation({ onSignOut }){
                 Sign out
             </button>
             <div className="nav-footer">
-                <span className="admin-avatar">AM</span>
+                <span className="admin-avatar">TM</span>
                 <span className="admin-details"><strong>Telvin Mugambi</strong><small>Club administrator</small></span>
             </div>
         </aside>
