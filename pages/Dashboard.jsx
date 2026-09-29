@@ -10,7 +10,7 @@ const startingMembers = [
 
 const subscriptions = ['Executive', 'Premium', 'Regular']
 
-export default function Dashboard() {
+export default function Dashboard({ onSignOut }) {
     const [members, setMembers] = useState(startingMembers)
     const [editingMember, setEditingMember] = useState(null)
     const [isFormOpen, setIsFormOpen] = useState(false)
@@ -127,7 +127,7 @@ export default function Dashboard() {
                 </section>
             </main>
 
-            <Navigation />
+            <Navigation onSignOut={onSignOut} />
 
             {isFormOpen && (
                 <div className="dialog-backdrop" onMouseDown={(event) => event.target === event.currentTarget && closeForm()}>

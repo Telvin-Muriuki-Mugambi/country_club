@@ -1,17 +1,14 @@
-# React + Vite
+# Country Club Members
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Country Club member dashboard includes administrator sign-in, member management, and an eight-hour browser-tab session.
 
-Currently, two official plugins are available:
+## Run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```sh
+npm install
+npm run dev
+```
 
-## React Compiler
+The local demo credentials are `admin@countryclub.local` and `clubadmin123`. To override them for a local build, set `VITE_ADMIN_EMAIL` and `VITE_ADMIN_PASSWORD` in a `.env.local` file.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# country_club
+This sign-in is a frontend demonstration, not production authentication. Vite exposes `VITE_` values to the client bundle, and browser session storage can be edited by the user. Protect real member data with a server-side login and authorization check.

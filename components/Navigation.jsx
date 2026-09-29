@@ -1,4 +1,4 @@
-export default function Navigation(){
+export default function Navigation({ onSignOut }){
     return (
         <aside className="side-navigation">
             <a className="club-mark" href="#overview" aria-label="Country Club home">
@@ -12,6 +12,10 @@ export default function Navigation(){
                 <a className="nav-link" href="#members"><span className="nav-glyph material-symbol" aria-hidden="true">groups</span>Members</a>
                 <a className="nav-link" href="#packages"><span className="nav-glyph material-symbol" aria-hidden="true">card_membership</span>Subscriptions</a>
             </nav>
+            <button className="nav-signout" type="button" onClick={onSignOut}>
+                <span className="material-symbol" aria-hidden="true">logout</span>
+                Sign out
+            </button>
             <div className="nav-footer">
                 <span className="admin-avatar">AM</span>
                 <span className="admin-details"><strong>Telvin Mugambi</strong><small>Club administrator</small></span>
