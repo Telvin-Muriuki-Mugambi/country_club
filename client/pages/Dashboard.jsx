@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Navigation from '../client/components/Navigation'
+import Navigation from '../components/Navigation'
 
 const startingMembers = [
     { id: 1, name: 'Amara Otieno', email: 'amara.otieno@example.com', subscription: 'Executive' },
