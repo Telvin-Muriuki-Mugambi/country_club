@@ -1,7 +1,7 @@
 import { useState } from 'react'
-import Dashboard from '../client/pages/Dashboard'
-import Signin from '../client/pages/Signin'
-import { clearAdminSession, createAdminSession, getAdminSession } from '../client/utils/sessions'
+import Dashboard from '../pages/Dashboard'
+import Signin from '../pages/Signin'
+import { clearAdminSession, createAdminSession, getAdminSession } from '../utils/sessions'
 import './App.css'
 
 function App() {
